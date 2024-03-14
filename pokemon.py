@@ -24,25 +24,26 @@ with st.container():
 
     with col3: 
 
-        pokemon_number = st.slider("Pick a Pokémon",
+        pokemon_number = st.slider("Pick a pokemon",
                                 min_value=1,
                                 max_value=150
                                 )
         audio_url = f"https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/{pokemon_number}.ogg"
-        st.audio(audio_url, format='audio/mp3', start_time=0)
-        pokemon_number2 = st.slider("Pick 2nd Pokémon",
+        st.audio(audio_url, format='audio/mp3', start_time=0, use_column_width=True)
+        pokemon_number2 = st.slider("Pick 2nd pokemon",
                                 min_value=1,
                                 max_value=150
                                 )
         audio_url2 = f"https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/{pokemon_number2}.ogg"
-        st.audio(audio_url2, format='audio/mp3', start_time=0)
+        st.audio(audio_url2, format='audio/mp3', start_time=0, use_column_width=True)
 
-        pokemon_number3 = st.slider("Pick 3rd Pokémon",
+        pokemon_number3 = st.slider("Pick 3rd pokemon",
                                 min_value=1,
                                 max_value=150
                                 )
         audio_url3 = f"https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/{pokemon_number3}.ogg"
-        st.audio(audio_url3, format='audio/mp3', start_time=0)
+        st.audio(audio_url3, format='audio/mp3', start_time=0, use_column_width=True)
+
 
 
     name, height, weight, moves = get_details(pokemon_number)
@@ -55,13 +56,13 @@ with st.container():
 
     # Display image of pokemon! (latest sprite from front!)
     with col2: 
-            image_url = f'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{pokemon_number}.png'
-            # st.image(image_url, caption='Image of Pokemon', use_column_width=True)
-            st.image(image_url, use_column_width=False)
-            image_url2 = f'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{pokemon_number2}.png'
-            st.image(image_url2, use_column_width=False)
-            image_url3 = f'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{pokemon_number3}.png' 
-            st.image(image_url3, use_column_width=False)
+        image_url = f'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{pokemon_number}.png'
+        # st.image(image_url, caption='Image of Pokemon', use_column_width=True)
+        st.image(image_url, use_column_width=True)
+        image_url2 = f'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{pokemon_number2}.png'
+        st.image(image_url2, use_column_width=True)
+        image_url3 = f'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{pokemon_number3}.png' 
+        st.image(image_url3, use_column_width=True)
     # st.image(image_url, caption='Image of Pokemon', width=400, align='center')
 
 
