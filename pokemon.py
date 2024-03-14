@@ -16,7 +16,7 @@ def get_details(poke_number):
 
 # st.set_page_config(layout="wide")
 st.set_page_config(layout="wide")
-st.header('Pick a Pokemon for their cry and number of moves comparison')
+st.header('Pick a Pokémon for their cry and number of moves comparison')
 with st.container(): 
     col2, col3, col4 = st.columns([0.4,1.5,1.5]) 
 
@@ -24,20 +24,20 @@ with st.container():
 
     with col3: 
 
-        pokemon_number = st.slider("Pick a pokemon",
+        pokemon_number = st.slider("Pick a Pokémon",
                                 min_value=1,
                                 max_value=150
                                 )
         audio_url = f"https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/{pokemon_number}.ogg"
         st.audio(audio_url, format='audio/mp3', start_time=0)
-        pokemon_number2 = st.slider("Pick 2nd pokemon",
+        pokemon_number2 = st.slider("Pick 2nd Pokémon",
                                 min_value=1,
                                 max_value=150
                                 )
         audio_url2 = f"https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/{pokemon_number2}.ogg"
         st.audio(audio_url2, format='audio/mp3', start_time=0)
 
-        pokemon_number3 = st.slider("Pick 3rd pokemon",
+        pokemon_number3 = st.slider("Pick 3rd Pokémon",
                                 min_value=1,
                                 max_value=150
                                 )
