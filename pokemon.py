@@ -30,6 +30,8 @@ height = height + 10
 height_data = pd.DataFrame({'Pokemon': ['Needle', name, 'Exaggetor'], 'Heights': [40, height, 200]})
 colours = ['grey', 'blue', 'red']
 
+st.set_page_config( layout='wide')
+
 # Display image of pokemon! (latest sprite from front!)
 with col1: 
     image_url = f'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{pokemon_number}.png'
