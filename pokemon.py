@@ -55,13 +55,13 @@ with st.container():
 
     # Display image of pokemon! (latest sprite from front!)
     with col2: 
-        image_url = f'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{pokemon_number}.png'
-        # st.image(image_url, caption='Image of Pokemon', use_column_width=True)
-        st.image(image_url, use_column_width=True)
-        image_url2 = f'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{pokemon_number2}.png'
-        st.image(image_url2, use_column_width=True)
-        image_url3 = f'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{pokemon_number3}.png' 
-        st.image(image_url3, use_column_width=True)
+            image_url = f'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{pokemon_number}.png'
+            # st.image(image_url, caption='Image of Pokemon', use_column_width=True)
+            st.image(image_url, use_column_width=False)
+            image_url2 = f'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{pokemon_number2}.png'
+            st.image(image_url2, use_column_width=False)
+            image_url3 = f'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{pokemon_number3}.png' 
+            st.image(image_url3, use_column_width=False)
     # st.image(image_url, caption='Image of Pokemon', width=400, align='center')
 
 
