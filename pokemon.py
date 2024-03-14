@@ -15,6 +15,7 @@ def get_details(poke_number):
         return 'Error', np.NAN, np.NAN, np.NAN
 
 # st.set_page_config(layout="wide")
+st.set_page_config(layout="wide")
 st.header('Pick a Pokemon for their cry and number of moves comparison')
 with st.container(): 
     col2, col3, col4 = st.columns([0.4,1.5,1.5]) 
