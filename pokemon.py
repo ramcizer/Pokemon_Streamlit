@@ -16,26 +16,6 @@ def get_details(poke_number):
 
 pokemon_number, pokemon_number2, pokemon_number3 = 1, 2, 3
 
-container_style = """
-    <style>
-        .container1 {
-            border: 2px solid #3498db;
-            border-radius: 8px;
-            padding: 10px;
-            margin-bottom: 20px;
-        }
-        .container2 {
-            /* Add styles for Container 2 if needed */
-        }
-    </style>
-"""
-
-# Display the CSS styles
-# st.markdown(container_style, unsafe_allow_html=True)
-
-# Use the styled containers
-# with st.container() as container1:
-# st.set_page_config(layout="wide")
 st.header('Pick a Pokemon for their cry and number of moves comparison')
 
 name, height, weight, moves = get_details(1)
