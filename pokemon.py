@@ -64,12 +64,8 @@ with st.container():
             
             with cont_col_2:
                 st.write(f'<span style="font-size: 11px; line-height: 0.8; padding-bottom: 10px;">Name: {name} <br> Height: {height}  <br> Weight: {weight} <br> Moves: {moves} </span>', unsafe_allow_html=True, use_column_width=True )
-            # with st.markdown("<div style='border: 2px solid #e6e6e6; padding: 10px;'>", unsafe_allow_html=True):
-                
-                
-
-            
-            # st.write("Check out their cry")       
+            # with st.markdown("<div style='border: 2px solid #e6e6e6; padding: 10px;'>", unsafe_allow_html=True):     
+               
             audio_url = f"https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/{pokemon_number}.ogg"
             st.audio(audio_url, format='audio/mp3', start_time=0)
             
