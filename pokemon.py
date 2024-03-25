@@ -47,6 +47,7 @@ name, height, weight, moves = get_details(1)
 name2, height2, weight2, moves2 = get_details(2)
 name3, height3, weight3, moves3 = get_details(3)
 
+# With streamlit the containers are divs. 
 with st.container():
     col1, col2, col3 = st.columns([3,3,3], gap='small') 
  
