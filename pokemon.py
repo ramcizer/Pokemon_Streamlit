@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
+# Starts with an API call
 def get_details(poke_number):
     try:
         url = f'https://pokeapi.co/api/v2/pokemon/{poke_number}/'
@@ -14,8 +15,10 @@ def get_details(poke_number):
     except:
         return 'Error', np.NAN, np.NAN, np.NAN
 
-pokemon_number, pokemon_number2, pokemon_number3 = 1, 2, 3
+# # Need to set initial Pokemon set
+# pokemon_number, pokemon_number2, pokemon_number3 = 1, 2, 3
 
+# A container style for potentially adding some styling
 container_style = """
     <style>
         .container1 {
@@ -36,6 +39,8 @@ container_style = """
 # Use the styled containers
 # with st.container() as container1:
 # st.set_page_config(layout="wide")
+
+# The head for the page
 st.header('Pick a Pokemon for their cry and number of moves comparison')
 
 name, height, weight, moves = get_details(1)
